@@ -2,32 +2,36 @@
 <extension version="3.9" type="plugin" group="cgresa" method="upgrade">
 	<name>PLG_CGRESA_CGSECURE</name>
 	<author>ConseilGouz</author>
-	<creationDate>2021 November</creationDate>
-	<copyright>(C)2021 ConseilGouz. All rights reserved.</copyright>
-	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<creationDate>2023-10-28</creationDate>
+	<copyright>(C)2023 ConseilGouz. All rights reserved.</copyright>
+	<license>GNU General Public License version 3 or later; see LICENSE.txt</license>
 	<authorEmail>pascal.leconte@conseilgouz.com</authorEmail>
 	<authorUrl>www.conseilgouz.com</authorUrl>
-	<version>1.0.1</version>
+	<version>3.0.0</version>
 	<description>PLG_CGRESA_CGSECURE_XML_DESCRIPTION</description>
+	<namespace path="src">ConseilGouz\Plugin\Cgresa\Cgsecure</namespace>
+	<scriptfile>script.php</scriptfile>
 	<files>
-		<filename plugin="cgsecure">cgsecure.php</filename>
+		<folder plugin="cgsecure">services</folder>
+		<folder>src</folder>
 		<filename>index.html</filename>
 	</files>
 	<languages>
-		<language tag="fr-FR">language/fr-FR/fr-FR.plg_cgresa_cgsecure.ini</language>
-		<language tag="fr-FR">language/fr-FR/fr-FR.plg_cgresa_cgsecure.sys.ini</language>
-		<language tag="en-GB">language/en-GB/en-GB.plg_cgresa_cgsecure.ini</language>
-		<language tag="en-GB">language/en-GB/en-GB.plg_cgresa_cgsecure.sys.ini</language>
+		<language tag="fr-FR">language/fr-FR/plg_cgresa_cgsecure.ini</language>
+		<language tag="fr-FR">language/fr-FR/plg_cgresa_cgsecure.sys.ini</language>
+		<language tag="en-GB">language/en-GB/plg_cgresa_cgsecure.ini</language>
+		<language tag="en-GB">language/en-GB/plg_cgresa_cgsecure.sys.ini</language>
 	</languages>
 	<config>
         <fields name="params">
-            <fieldset name="basic">
+            <fieldset name="basic" addfieldprefix="ConseilGouz\Plugin\Cgresa\Cgsecure\Field">
+				<field name="version" type="version"  margintop="-3em"  extension="cgsecure" />
 				<field name="note" type="note"  label="CGSECURE_NOTE" description="CGSECURE_NOTE_DESC" />
 			</fieldset>
 		</fields>
 	</config>	
 	<updateservers>
-		<server type="extension" name="plg_cgresa_cgsecure" priority="1">https://www.conseilgouz.com/updates/plg_cgresa_cgsecure_update.xml</server>
+		<server type="extension" name="plg_cgresa_cgsecure" priority="1">https://raw.githubusercontent.com/conseilgouz/updates_github/master/plg_cgresa_cgsecure_update.xml</server>
 	</updateservers>
 
 </extension>
