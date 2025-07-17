@@ -2,12 +2,12 @@
 <extension version="3.9" type="plugin" group="cgresa" method="upgrade">
 	<name>PLG_CGRESA_CGSECURE</name>
 	<author>ConseilGouz</author>
-	<creationDate>2023-10-28</creationDate>
-	<copyright>(C)2023 ConseilGouz. All rights reserved.</copyright>
+	<creationDate>2025-07-17</creationDate>
+	<copyright>(C)2025 ConseilGouz. All rights reserved.</copyright>
 	<license>GNU General Public License version 3 or later; see LICENSE.txt</license>
 	<authorEmail>pascal.leconte@conseilgouz.com</authorEmail>
 	<authorUrl>www.conseilgouz.com</authorUrl>
-	<version>3.0.0</version>
+	<version>3.5.0</version>
 	<description>PLG_CGRESA_CGSECURE_XML_DESCRIPTION</description>
 	<namespace path="src">ConseilGouz\Plugin\Cgresa\Cgsecure</namespace>
 	<scriptfile>script.php</scriptfile>

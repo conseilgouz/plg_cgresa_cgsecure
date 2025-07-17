@@ -1,9 +1,8 @@
 <?php
 /**
  * @component     Plugin CG Resa CG Secure
- * Version			: 3.0.0
  * @license https://www.gnu.org/licenses/gpl-3.0.html GNU/GPL
- * @copyright (c) 2023 ConseilGouz. All Rights Reserved.
+ * @copyright (c) 2025 ConseilGouz. All Rights Reserved.
  * @author ConseilGouz 
 **/
 namespace ConseilGouz\Plugin\Cgresa\Cgsecure\Extension; 
@@ -12,7 +11,7 @@ defined('_JEXEC') or die();
 use Joomla\CMS\Plugin\CMSPlugin;
 use Joomla\CMS\Factory;
 use Joomla\CMS\Language\Text;
-use ConseilGouz\CGSecure\Helper\Cgipcheck;
+use ConseilGouz\CGSecure\Cgipcheck;
 
 class Cgsecure extends CMSPlugin
 {
